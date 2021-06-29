@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 body {
   width: 100vw;
@@ -28,7 +29,10 @@ body {
 /*----- HEADER -----*/
 header {
   height: 720px;
-  background: #f2a413;
+  background: url(images/logo.jpg);
+  background-size: cover;
+  text-align: center;
+  background-position: 50% 50%;
 }
 nav {
   display: flex;
@@ -38,24 +42,11 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-size: 18px;
 }
 nav a:hover {
   text-decoration: underline;
-}
-#header-logo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-header img {
-  width: 600px;
-  height: 400px;
-  background: #f2bb13;
-  margin-bottom: 50px;
 }
 header p {
   color: white;
