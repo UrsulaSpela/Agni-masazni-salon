@@ -55,10 +55,11 @@ header p {
 /*----- FOOTER -----*/
 footer {
   height: 400px;
-  background: #f2bb13;
+  background: #f39200;
   color: white;
-  text-align: center;
   padding: 100px;
+  display: flex;
+  justify-content: space-evenly;
 }
 footer p {
   font-size: 18px;
