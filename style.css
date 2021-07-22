@@ -12,10 +12,6 @@ body {
   width: 1440px;
   margin: 0 auto;
 }
-.main-item {
-  height: 500px;
-  display: flex;
-}
 .main-item img,
 .item-text {
   width: 720px;
@@ -51,6 +47,9 @@ header p {
   opacity: 0.7;
 }
 /*---- STORITVE ---*/
+#storitve{
+  display: flex;
+}
 #storitve p {
   font-size: 18px;
 }
@@ -63,6 +62,9 @@ li {
   line-height: 25px;
 }
 /*----- CENIK -----*/
+#cenik{
+  display: flex;
+}
 h3 {
   text-align: center;
   font-size: 20px;
@@ -80,6 +82,9 @@ h3 {
 #psiho-sproščanje p {
   font-weight: 300;
   line-height: 25px;
+}
+#about, #psiho-sproščanje{
+  display: flex;
 }
 /*----- FOOTER -----*/
 footer {
@@ -114,7 +119,7 @@ footer a:hover {
     width: 375px;
   }
   .main-item {
-    height: 760px;
+    width: 375px;
     display: flex;
   }
   .main-item img{
@@ -123,7 +128,6 @@ footer a:hover {
   }
   .item-text {
     padding: 25px;
-    height: 500px;
     width: 375px;
   }
   /*----- HEADER -----*/
@@ -138,18 +142,35 @@ nav {
   display: none;
 }
 /*---- STORITVE ---*/
-.main-item{
+#storitve, #about{
   flex-direction: column;
 }
+#cenik, #psiho-sproščanje{
+  flex-direction: column-reverse;
+}
+#storitve .item-text{
+  height: 400px;
+}
 #storitve p {
-  font-size: 18px;
+  font-size: 16px;
 }
-ul {
-  padding-left: 30px;
+#cenik .item-text{
+  height: 700px;
 }
-li {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 25px;
+#about .item-text{
+  height: 600px;
+}
+#psiho-sproščanje .item-text{
+  height: 800px;
+}
+/*----- FOOTER -----*/
+footer {
+  height: 500px;
+  padding: 25px;
+  flex-direction: column;
+  text-align: center;
+}
+footer h3{
+  text-align: center;
 }
 }
